@@ -19,7 +19,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.requires_arc = true
   s.frameworks   = 'XCTest','UIKit','Foundation','QuartzCore'
-  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   s.user_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks' }
   s.default_subspecs = 'SwiftSupport'
   s.swift_version = '4.0'
